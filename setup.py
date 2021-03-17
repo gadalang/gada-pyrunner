@@ -36,15 +36,15 @@ setup(
     long_description=readme(),
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=["tests"]),
-    install_requires=[
-        "gada"
-    ],
+    install_requires=["gada"],
     test_suite="test",
     tests_require=["nose", "nose-cover3"],
-    entry_points={"gada.runners": [
-        "pymodule = gada_pyrunner.pymodule",
-        "python = gada_pyrunner.python"
-    ]},
+    entry_points={
+        "gada.runners": [
+            "pymodule = gada_pyrunner.pymodule",
+            "python = gada_pyrunner.python",
+        ]
+    },
     include_package_data=True,
     zip_safe=True,
     python_requires=">=3.6",
