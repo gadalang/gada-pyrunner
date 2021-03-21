@@ -17,6 +17,43 @@ Using pip:
 $ pip3 install gada-pyrunner
 ```
 
+## Basic example
+
+Create a Python package with the following structure and add it to your `PYTHONPATH`:
+
+```bash
+├── gadalang_mycomponent
+│   ├── __init__.py
+│   ├── mynode.py
+│   └── config.yml
+```
+
+Content of `mynode.py`:
+
+```python
+def main():
+    print("hello world")
+
+if __name__ == "__main__":
+    main()
+```
+
+Content of `config.yml`:
+
+```yaml
+nodes:
+  mynode:
+    runner: python
+    file: mynode.py
+```
+
+Usage:
+
+```bash
+$ gada mycomponent.mynode
+hello world
+```
+
 ## Documentation
 
 Build the doc with:
