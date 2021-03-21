@@ -17,6 +17,16 @@ Using pip:
 $ pip3 install gada-pyrunner
 ```
 
+## Documentation
+
+Build the doc with:
+
+```bash
+$ make html
+```
+
+You can find the latest documentation on [gada-pyrunner.readthedocs.io](https://gada-pyrunner.readthedocs.io/).
+
 ## Basic example
 
 Create a Python package with the following structure and add it to your `PYTHONPATH`:
@@ -53,16 +63,6 @@ Usage:
 $ gada mycomponent.mynode
 hello world
 ```
-
-## Documentation
-
-Build the doc with:
-
-```bash
-$ make html
-```
-
-You can find the latest documentation on [gada-pyrunner.readthedocs.io](https://gada-pyrunner.readthedocs.io/).
 
 ## Testing
 
