@@ -14,19 +14,29 @@ Python runner for [gada](https://github.com/gadalang/gada).
 Using pip:
 
 ```bash
-pip install gada-pyrunner
+$ pip3 install gada-pyrunner
 ```
+
+## Documentation
+
+Build the doc with:
+
+```bash
+$ make html
+```
+
+You can find the latest documentation on [gada-pyrunner.readthedocs.io](https://gada-pyrunner.readthedocs.io/).
 
 ## Testing
 
 The `test` directory contains many tests that you can run with:
 
 ```python
-python setup.py test
+$ python setup.py test
 ```
 
 Or with coverage:
 
 ```python
-coverage run --source=gada_pyrunner setup.py test
+$ coverage run --source=gada_pyrunner setup.py test
 ```
