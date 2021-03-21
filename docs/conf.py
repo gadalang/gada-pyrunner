@@ -38,7 +38,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.autodoc",
     "sphinx_autodoc_typehints",
-    "m2r2"
+    "m2r2",
 ]
 
 source_suffix = [".rst", ".md"]
@@ -51,9 +51,9 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
-highlight_language = 'python3'
+highlight_language = "python3"
 
 # -- Options for HTML output -------------------------------------------------
 

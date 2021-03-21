@@ -47,7 +47,14 @@ def load_module(name: str):
         raise Exception(f"failed to import module {name}") from e
 
 
-def run(comp, *, gada_config: dict, node_config: dict, argv: Optional[List] = None, **kw: dict):
+def run(
+    comp,
+    *,
+    gada_config: dict,
+    node_config: dict,
+    argv: Optional[List] = None,
+    **kw: dict,
+):
     """Run a gada node from a Python package.
 
     This will load the module into memory and call the configured entrypoint:
@@ -57,13 +64,15 @@ def run(comp, *, gada_config: dict, node_config: dict, argv: Optional[List] = No
         m = importlib.import_module[node_config["module"]]
         e = getattr(m, node_config["entrypoint"])
         e(...)
-    
+
     :param comp: loaded component
     :param gada_config: gada configuration
     :param node_config: node configuration
     :param argv: additional CLI arguments
     :param kw: unused arguments
     """
+    argv = argv if argv is not None else []
+
     # Check the entrypoint is configured
     entrypoint = node_config.get("entrypoint", None)
     if not entrypoint:
@@ -79,4 +88,4 @@ def run(comp, *, gada_config: dict, node_config: dict, argv: Optional[List] = No
         raise Exception(f"module {comp.__name__} has no entrypoint {entrypoint}")
 
     # Call entrypoint
-    fun(argv=["gada"] + argv)
+    fun(argv=[comp.__name__] + argv)

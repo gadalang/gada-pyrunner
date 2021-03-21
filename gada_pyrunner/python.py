@@ -49,7 +49,7 @@ def run(comp, *, gada_config: dict, node_config: dict, argv: Optional[List] = No
     .. code-block:: bash
 
         python ${file} ${argv}
-    
+
     :param comp: loaded component
     :param gada_config: gada configuration
     :param node_config: node configuration
