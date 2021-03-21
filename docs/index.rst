@@ -20,13 +20,6 @@ Installation
    $ pip3 install gada-pyrunner
 
 
-Dependencies
-------------
-
-- Python 3.7+
-- gada_
-
-
 Testing
 -------
 
@@ -43,6 +36,13 @@ Or with coverage:
    $ coverage run --source=gada_pyrunner setup.py test
 
 
+Dependencies
+------------
+
+- Python 3.7+
+- gada_
+
+
 Contents:
 ---------
 
@@ -51,7 +51,6 @@ Contents:
 
    pymodule
    python
-   examples
 
 Indices and tables
 ==================
