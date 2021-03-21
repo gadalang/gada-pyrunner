@@ -15,9 +15,9 @@ Python runner for gada_.
 Installation
 ------------
 
-.. code::
+.. code-block:: bash
 
-   pip3 install gada-pyrunner
+   $ pip3 install gada-pyrunner
 
 
 Dependencies
@@ -25,6 +25,22 @@ Dependencies
 
 - Python 3.7+
 - gada_
+
+
+Testing
+-------
+
+The `test` directory contains many tests that you can run with:
+
+.. code-block:: bash
+
+   $ python setup.py test
+
+Or with coverage:
+
+.. code-block:: bash
+
+   $ coverage run --source=gada_pyrunner setup.py test
 
 
 Contents:
