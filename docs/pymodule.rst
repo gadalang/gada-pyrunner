@@ -6,8 +6,8 @@
 
 Here is a full list of runners included in this package.
 
-pymodule
-========
+pymodule Runner
+===============
 
 .. automodule:: gada_pyrunner.pymodule
 

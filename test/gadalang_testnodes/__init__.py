@@ -3,19 +3,17 @@
 PYTHONPATH will be automatically set so Python can find this package.
 """
 import sys
+import argparse
 
 
-def sum(argv):
-    """Entrypoint used with **pymodule** runner."""
-    from functools import reduce
+def hello(argv, *, stdin=None, stdout=None, stderr=None):
+    parser = argparse.ArgumentParser("hello")
+    parser.add_argument("name", type=str, help="your name")
+    args = parser.parse_args(argv[1:])
 
-    print(reduce(lambda x, y: x + y, [int(_) for _ in argv[1:]]))
-
-
-def main(argv):
-    """Entrypoint used with **python** runner."""
-    sum(argv=argv)
+    # Write to sys.stdout or to provided output stream (for pymodule)
+    print(f"hello {args.name} !", file=stdout if stdout is not None else sys.stdout)
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    hello(sys.argv)

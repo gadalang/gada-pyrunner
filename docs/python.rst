@@ -1,8 +1,8 @@
 .. -*- coding: utf-8 -*-
 .. _python:
 
-python
-======
+python Runner
+=============
 
 .. automodule:: gada_pyrunner.python
 
@@ -17,12 +17,12 @@ Based on Python package structure shown above:
       mynode:
         runner: python
         [bin: python]
-        file: mynode.py
+        file: ${comp_dir}/mynode.py
 
 Parameters:
 
 - ``bin``: Optional - Python bin to use in command line (default is ``python``)
-- ``file``: Python script to run (relative to ``gadalang_mycomponent``)
+- ``file``: Python script to run
 
 Handle command line arguments
 -----------------------------
