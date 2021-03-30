@@ -51,6 +51,7 @@ Contents:
 
    pymodule
    python
+   testutils
 
 Indices and tables
 ==================
