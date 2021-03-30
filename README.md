@@ -54,7 +54,7 @@ Content of `config.yml`:
 nodes:
   mynode:
     runner: python
-    file: mynode.py
+    file: ${comp_dir}/mynode.py
 ```
 
 Usage:
@@ -69,11 +69,5 @@ hello world
 The `test` directory contains many tests that you can run with:
 
 ```python
-$ python setup.py test
-```
-
-Or with coverage:
-
-```python
-$ coverage run --source=gada_pyrunner setup.py test
+$ tox .
 ```
