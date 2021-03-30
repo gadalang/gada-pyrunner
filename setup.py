@@ -37,8 +37,6 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=["tests"]),
     install_requires=["gada"],
-    test_suite="test",
-    tests_require=["nose", "nose-cover3"],
     entry_points={
         "gada.runners": [
             "pymodule = gada_pyrunner.pymodule",
