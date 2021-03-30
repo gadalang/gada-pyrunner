@@ -54,7 +54,7 @@ Content of `config.yml`:
 nodes:
   mynode:
     runner: python
-    file: mynode.py
+    file: ${comp_dir}/mynode.py
 ```
 
 Usage:
