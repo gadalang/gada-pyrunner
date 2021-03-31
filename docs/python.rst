@@ -71,7 +71,7 @@ Now you can make your gada node either run with Python 3.7 or Python 3.8 by sett
       mynode:
         runner: python
         bin: python3.8
-        file: mynode.py
+        file: ${comp_dir}/mynode.py
 
 Content of ``mynode.py``:
 

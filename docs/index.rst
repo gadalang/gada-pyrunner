@@ -23,17 +23,11 @@ Installation
 Testing
 -------
 
-The `test` directory contains many tests that you can run with:
+The ``test`` directory contains many tests that you can run with:
 
 .. code-block:: bash
 
-   $ python setup.py test
-
-Or with coverage:
-
-.. code-block:: bash
-
-   $ coverage run --source=gada_pyrunner setup.py test
+   $ tox .
 
 
 Dependencies
@@ -42,6 +36,10 @@ Dependencies
 - Python 3.7+
 - gada_
 
+License
+-------
+
+Licensed under the MIT License.
 
 Contents:
 ---------
