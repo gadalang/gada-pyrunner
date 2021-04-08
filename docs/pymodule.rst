@@ -21,12 +21,12 @@ Based on Python package structure shown above:
     nodes:
       mynode:
         runner: pymodule
-        [module: gadalang_mycomponent.mynode]
+        [module: mycomponent.mynode]
         [entrypoint: main]
 
 Parameters:
 
-- ``module``: Optional - Python module to load (default is ``gadalang_mycomponent``)
+- ``module``: Optional - Python module to load (default is ``mycomponent``)
 - ``entrypoint``: Optional - Function to call from ``module`` (default is ``main``)
 
 Handle command line arguments

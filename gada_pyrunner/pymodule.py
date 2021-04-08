@@ -4,7 +4,7 @@ Basic Python package structure:
 
 .. code-block:: bash
 
-    ├── gadalang_mycomponent
+    ├── mycomponent
     │   ├── __init__.py
     │   ├── mynode.py
     │   └── config.yml
@@ -23,7 +23,7 @@ Sample ``config.yml``:
     nodes:
       mynode:
         runner: pymodule
-        module: gadalang_mycomponent.mynode
+        module: mycomponent.mynode
         entrypoint: main
 
 Usage:
@@ -68,12 +68,12 @@ def run(
         >>> import gada.test_utils
         >>> import gada_pyrunner
         >>>
-        >>> # Overwrite "gada_pyrunner/test/gadalang_testnodes/config.yml" for this test
+        >>> # Overwrite "gada_pyrunner/test/testnodes/config.yml" for this test
         >>> gada_pyrunner.test_utils.write_testnodes_config({
         ...     'nodes': {
         ...         'hello': {
         ...             'runner': 'pymodule',
-        ...             'module': 'gadalang_testnodes',
+        ...             'module': 'testnodes',
         ...             'entrypoint': 'hello'
         ...         }
         ...     }

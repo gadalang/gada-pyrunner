@@ -27,16 +27,14 @@ def _run(argv: Optional[list[str]] = None) -> tuple[str, str]:
 
 
 class TestCaseBase(unittest.TestCase):
-    CONFIG_YML = os.path.join(
-        os.path.dirname(__file__), "gadalang_testnodes", "config.yml"
-    )
+    CONFIG_YML = os.path.join(os.path.dirname(__file__), "testnodes", "config.yml")
     NODES_CONFIG = r"""nodes:
     pymodule_hello:
         runner: pymodule
         entrypoint: hello
     pymodule_hello2:
         runner: pymodule
-        module: gadalang_testnodes
+        module: testnodes
         entrypoint: hello
     python_hello:
         runner: python

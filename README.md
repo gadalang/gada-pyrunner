@@ -32,7 +32,7 @@ You can find the latest documentation on [gada-pyrunner.readthedocs.io](https://
 Create a Python package with the following structure and add it to your `PYTHONPATH`:
 
 ```bash
-├── gadalang_mycomponent
+├── mycomponent
 │   ├── __init__.py
 │   ├── mynode.py
 │   └── config.yml

@@ -53,7 +53,7 @@ class PyModuleTestCase(TestCaseBase):
         )
 
         self.assertIn(
-            "module gadalang_testnodes has no entrypoint invalid",
+            "module testnodes has no entrypoint invalid",
             stderr,
             "wrong output",
         )
